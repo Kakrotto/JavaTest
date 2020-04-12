@@ -1,0 +1,9 @@
+Topic：将一组int值视为unicde 编码，然后将这组值拼接成一个字符串
+Code：
+       int a=20; 
+       int b=30;
+       int c=40;
+       String s=""+(char)a+(char)b+(char)c;
+ 知识点：1  String是引用类型，可做字符串加法，空串和其他类型相加，其他类型会自动转为String类型，然后再相加
+               2  char类型和int类型可以通过赋值进行转换，将char类型赋值给int类型，可得到Unicode编码，将int类型
+                   赋值给char类型可得到相应的字符，再通过字符串加法自动转换为字符串；
